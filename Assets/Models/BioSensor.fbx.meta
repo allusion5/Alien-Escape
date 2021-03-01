@@ -2,7 +2,10 @@ fileFormatVersion: 2
 guid: f02f4e406ed99db4b82f8fa889636036
 ModelImporter:
   serializedVersion: 20200
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      74: 1827226128182048838
+    second: Take 001
   externalObjects:
   - first:
       type: UnityEngine:Material
@@ -18,7 +21,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Head_Mat
-    second: {fileID: 2100000, guid: 1466c91e7e9126646a68c25f946e9637, type: 2}
+    second: {fileID: 2100000, guid: 61f8c17f8dcf3e445998f6e0b0d528df, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -33,22 +36,22 @@ ModelImporter:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Arm_1
-    second: {fileID: 2800000, guid: e2af331cff9ae8446aa359ecd4a801af, type: 3}
+    second: {fileID: 2800000, guid: 776fcc5fee90c9747ab72ea3fa5d026e, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Arm_2
-    second: {fileID: 2800000, guid: 236a5c92b280b28468c8fb569a8552c5, type: 3}
+    second: {fileID: 2800000, guid: 50d1e82453a055b4783a0aabe2b5ee56, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Head
-    second: {fileID: 2800000, guid: aadd5125935043543bf66b9cfb885d44, type: 3}
+    second: {fileID: 2800000, guid: d231802f50334fb49913228d5a35ed8a, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Left_Ear
-    second: {fileID: 2800000, guid: 6a5b849c8feda27468e108fe33734ba7, type: 3}
+    second: {fileID: 2800000, guid: d5963ea401bcff14eb14adbb205ee329, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

@@ -13,7 +13,7 @@ ModelImporter:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: hallway_floor
-    second: {fileID: 2800000, guid: ea6f7392549d3214996bd016327c03ad, type: 3}
+    second: {fileID: 2800000, guid: 3b7f0ff89e154e64c8031c6d6fa5017b, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
