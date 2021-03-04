@@ -1,4 +1,5 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream
 guid: 391a8b6c73a3f6740a5f9269f92198bd
 ModelImporter:
   serializedVersion: 20200
@@ -14,6 +15,13 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Cabinet
     second: {fileID: 2800000, guid: 0f579bca3a9abc549b1ce69375cdbbdf, type: 3}
+=======
+guid: f41ee504db1a9844f85bc372678ec79b
+ModelImporter:
+  serializedVersion: 20200
+  internalIDToNameTable: []
+  externalObjects: {}
+>>>>>>> Stashed changes
   materials:
     materialImportMode: 2
     materialName: 0

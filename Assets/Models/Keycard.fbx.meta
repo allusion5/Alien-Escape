@@ -1,4 +1,5 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream
 guid: 0524548c945012c4a831a35ca5e87240
 ModelImporter:
   serializedVersion: 20200
@@ -14,6 +15,13 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Keycard
     second: {fileID: 2800000, guid: 3d35218022ddfc541ab38857d2618ef9, type: 3}
+=======
+guid: 328f0c851d2947e4b86b528317bbe3fb
+ModelImporter:
+  serializedVersion: 20200
+  internalIDToNameTable: []
+  externalObjects: {}
+>>>>>>> Stashed changes
   materials:
     materialImportMode: 2
     materialName: 0

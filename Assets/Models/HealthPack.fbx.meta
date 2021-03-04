@@ -1,4 +1,5 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream
 guid: efb3df66ee3459244a1043cd8006a284
 ModelImporter:
   serializedVersion: 20200
@@ -14,6 +15,13 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Health_Pack
     second: {fileID: 2800000, guid: 8930317aa9fc7b84a8484cd2d9033de0, type: 3}
+=======
+guid: a2f5a12a1cf41484cb08ec35043c8153
+ModelImporter:
+  serializedVersion: 20200
+  internalIDToNameTable: []
+  externalObjects: {}
+>>>>>>> Stashed changes
   materials:
     materialImportMode: 2
     materialName: 0

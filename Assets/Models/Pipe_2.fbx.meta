@@ -1,4 +1,5 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream
 guid: 8d30439dbd250e043925a521ec8ab5e0
 ModelImporter:
   serializedVersion: 20200
@@ -14,6 +15,13 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Pipe_1
     second: {fileID: 2800000, guid: 5a715698f3f1dfc49a606f02a7fcfb69, type: 3}
+=======
+guid: 3fc1d20a9f4d6a44aa8eece97196c880
+ModelImporter:
+  serializedVersion: 20200
+  internalIDToNameTable: []
+  externalObjects: {}
+>>>>>>> Stashed changes
   materials:
     materialImportMode: 2
     materialName: 0

@@ -5,9 +5,10 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
+    public Vector3 lastPlayerSighting;
     public float playerHealth;
     public bool gameActive = false;
-    public Canvas UI;
+    public Canvas PauseMenu;
 
     void Awake()
     {
@@ -24,15 +25,36 @@ public class GameManager : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
             Application.Quit();
         }
 
-        if(Input.GetKeyDown(KeyCode.Return) && gameActive == true)
+        if (Input.GetKeyDown(KeyCode.Return) && gameActive == true)
         {
-            //this will be the place for the pause menu
-            return; //delete this once pause implemented
+            OpenPauseMenu();
+        }
+    }
+
+    void Die()
+    {
+        if (playerHealth <= 0)
+        {
+            OpenPauseMenu();
+        }
+    }
+
+    void OpenPauseMenu()
+    {
+        gameActive = false;
+        PauseMenu.enabled = true;
+        Time.timeScale = 0;
+
+        if (Input.GetKeyDown(KeyCode.Return))
+        {
+            PauseMenu.enabled = false;
+            gameActive = true;
+            Time.timeScale = 1;
         }
     }
 }

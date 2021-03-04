@@ -1,4 +1,5 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream
 guid: 85f520ea7d4a1b64c9646ea8902dc18b
 ModelImporter:
   serializedVersion: 20200
@@ -14,6 +15,13 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Escape_Pod
     second: {fileID: 2800000, guid: 2358be209697afe47843376496635050, type: 3}
+=======
+guid: 1a9b17d4fc32467469542f23831eee56
+ModelImporter:
+  serializedVersion: 20200
+  internalIDToNameTable: []
+  externalObjects: {}
+>>>>>>> Stashed changes
   materials:
     materialImportMode: 2
     materialName: 0
