@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MenuScene.unity
+    guid: 5efd38ac3d6849e449955aa00b04a85e
+  - enabled: 1
+    path: Assets/Scenes/AlienEscapeGame.unity
+    guid: 78e1310e8bd9aeb44b40ec7b37c3014e
   m_configObjects: {}
