@@ -24,15 +24,15 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 1; // This is so that when you return from the main menu the game runs as if its a new game.
         counter = 0; // This is so that the background music can reset upon reloading from the main menu.
 
-       // if (Instance == null) Things werent working correctly on reset going from pause menu to main menu and then starting new game, so i did comment this section out. If you know how to make it work properly awesome. - Jordan
-       // {
-            //Instance = this;
-           // DontDestroyOnLoad(gameObject);
-        //}
-        //else
-        //{
-            //Destroy(gameObject);
-        //}
+       if (Instance == null) //Things werent working correctly on reset going from pause menu to main menu and then starting new game, so i did comment this section out. If you know how to make it work properly awesome. - Jordan
+       {
+            Instance = this;
+           DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 
     void Update()
@@ -55,7 +55,7 @@ public class GameManager : MonoBehaviour
                 counter +=1 ;
             }
         }
-        if (isDetected == false && counter == 2 )
+        if (isDetected == false && counter == 2)
         {
             counter = 0;
         }
