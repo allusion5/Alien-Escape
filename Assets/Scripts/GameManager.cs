@@ -13,16 +13,26 @@ public class GameManager : MonoBehaviour
     public AudioClip undetectedMusic;
     public AudioClip detectedMusic;
     public AudioClip gameOverMusic;
-    int counter = 0;
+    public AudioClip winMusic;
+    public AudioClip pickUpSound;
+    public AudioClip detectedbyRobot;
+    int counter = 0;//Helps keep the main background detected and undetected audio sounding right
+    int losecounter = 0;//Helps Keep the game over audio sounding right
+    int wincounter = 0;// Helps keep the win audio sounding right
     public Canvas PauseMenu;
     public Canvas GameOverMenu;
+    public Canvas WinMenu;
+    public bool hasKeyCard;
 
     void Awake()
     {
         PauseMenu.enabled = false; // Pause menu canvas is off waiting for the player to press P to turn it on.
         GameOverMenu.enabled = false; // GameOverMenu is off waiting for players health to hit 0.
+        WinMenu.enabled = false; // WinMenu is waiting to be triggered
         Time.timeScale = 1; // This is so that when you return from the main menu the game runs as if its a new game.
         counter = 0; // This is so that the background music can reset upon reloading from the main menu.
+        losecounter = 0;
+        wincounter = 0;
 
        if (Instance == null) //Things werent working correctly on reset going from pause menu to main menu and then starting new game, so i did comment this section out. If you know how to make it work properly awesome. - Jordan
        {
@@ -44,7 +54,14 @@ public class GameManager : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.P))
         {
-            PauseMenuUp();
+            if (PauseMenu.enabled == false)
+            {
+                PauseMenuUp();
+            }
+            else
+            {
+                PauseMenuDown();
+            }
         }
         if (isDetected == true && counter == 1)
         {
@@ -92,6 +109,7 @@ public class GameManager : MonoBehaviour
     public void PauseMenuUp()
     {
         PauseMenu.enabled = true;
+        gameActive = false;
         Time.timeScale = 0;
     }
     public void PauseMenuDown()
@@ -101,9 +119,38 @@ public class GameManager : MonoBehaviour
     }
     public void GameOverMenuUp()
     {
+        if(losecounter == 0)
+        {
         Source1.clip = gameOverMusic;
         Source1.Play();
         GameOverMenu.enabled = true;
+        losecounter += 1;
+        }
+    }
+    public void WinMenuUp()
+    {
+        if( wincounter == 0)
+        {
+        Source1.clip = winMusic;
+        Source1.Play();
+        WinMenu.enabled = true;
+        wincounter += 1;
+        }
+    }
+    public void RobotDetectSound()
+    {
+        Source1.PlayOneShot(detectedbyRobot, 0.8f);
+    }
+    public void ItemPickUpSound()
+    {
+        Source1.PlayOneShot(pickUpSound,0.8f);
+    }
+    void OnTriggerStay (Collider other)
+    {
+        if(other.gameObject.CompareTag("Player") && hasKeyCard == true)
+        {
+            WinMenuUp();
+        }
     }
 
     //public void OpenPauseMenu()  Couldnt get this to work properly so i did it differently hope thats okay, if not thats why i left it in. - Jordan
