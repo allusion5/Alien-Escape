@@ -2,23 +2,24 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - BiosensorLineOfSight
+    - EscapePod
     - GameManager
+    - GasMask
+    - HealthPack
+    - Keycard
     - MenuScript
     - MouseLook
+    - OxygenRelease
+    - PickupRotator
     - PlayerController
     - RobotController
+    - RobotHurtBox
     NavMeshComponents.dll:
     - UnityEngine.AI.NavMeshModifier
     - UnityEngine.AI.NavMeshModifierVolume
     - UnityEngine.AI.NavMeshSurface
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
-    UnityEditor.Graphs.dll:
-    - UnityEditor.Graphs.AnimationBlendTree.Graph
-    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.Graph
-    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -51,6 +52,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
+    - Class: 54
+      Script: {instanceID: 0}
     - Class: 64
       Script: {instanceID: 0}
     - Class: 65
@@ -74,38 +77,54 @@ ScriptsOnlyBuild:
     - Class: 111
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1528}
+      Script: {instanceID: 1486}
     - Class: 114
-      Script: {instanceID: 1866}
+      Script: {instanceID: 1824}
     - Class: 114
-      Script: {instanceID: 1878}
+      Script: {instanceID: 1836}
     - Class: 114
-      Script: {instanceID: 2152}
+      Script: {instanceID: 2110}
     - Class: 114
-      Script: {instanceID: 2262}
+      Script: {instanceID: 2220}
     - Class: 114
-      Script: {instanceID: 2318}
+      Script: {instanceID: 2276}
     - Class: 114
-      Script: {instanceID: 2374}
+      Script: {instanceID: 2332}
     - Class: 114
-      Script: {instanceID: 2376}
+      Script: {instanceID: 2334}
     - Class: 114
-      Script: {instanceID: 2690}
+      Script: {instanceID: 2448}
     - Class: 114
-      Script: {instanceID: 2868}
+      Script: {instanceID: 2536}
     - Class: 114
-      Script: {instanceID: 2962}
+      Script: {instanceID: 2564}
     - Class: 114
-      Script: {instanceID: 3096}
+      Script: {instanceID: 2648}
     - Class: 114
-      Script: {instanceID: 3408}
+      Script: {instanceID: 2656}
     - Class: 114
-      Script: {instanceID: 3466}
+      Script: {instanceID: 2834}
     - Class: 114
-      Script: {instanceID: 3542}
+      Script: {instanceID: 2904}
+    - Class: 114
+      Script: {instanceID: 2930}
+    - Class: 114
+      Script: {instanceID: 3064}
+    - Class: 114
+      Script: {instanceID: 3376}
+    - Class: 114
+      Script: {instanceID: 3434}
+    - Class: 114
+      Script: {instanceID: 3458}
+    - Class: 114
+      Script: {instanceID: 3512}
+    - Class: 114
+      Script: {instanceID: 3530}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
+      Script: {instanceID: 0}
+    - Class: 135
       Script: {instanceID: 0}
     - Class: 136
       Script: {instanceID: 0}
@@ -118,6 +137,10 @@ ScriptsOnlyBuild:
     - Class: 195
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
       Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
@@ -155,21 +178,21 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1528}
+      Script: {instanceID: 1486}
     - Class: 114
-      Script: {instanceID: 1796}
+      Script: {instanceID: 1754}
     - Class: 114
-      Script: {instanceID: 2262}
+      Script: {instanceID: 2220}
     - Class: 114
-      Script: {instanceID: 2690}
+      Script: {instanceID: 2656}
     - Class: 114
-      Script: {instanceID: 2868}
+      Script: {instanceID: 2834}
     - Class: 114
-      Script: {instanceID: 3096}
+      Script: {instanceID: 3064}
     - Class: 114
-      Script: {instanceID: 3408}
+      Script: {instanceID: 3376}
     - Class: 114
-      Script: {instanceID: 3542}
+      Script: {instanceID: 3512}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -297,7 +320,7 @@ ScriptsOnlyBuild:
     className: TMP_FontAsset
   - hash:
       serializedVersion: 2
-      Hash: 3793e57ef449563beae721cc234d3e45
+      Hash: d071601923e3362b401c88054c58ff94
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameManager
@@ -399,7 +422,7 @@ ScriptsOnlyBuild:
     className: SignalTrack
   - hash:
       serializedVersion: 2
-      Hash: 4d973ef3ed50e5492317ec16ccc3856b
+      Hash: 779c5c3219212c863913b2584a44dd3e
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: BiosensorLineOfSight
@@ -411,7 +434,7 @@ ScriptsOnlyBuild:
     className: PlaymodeTestsController
   - hash:
       serializedVersion: 2
-      Hash: b369283c7eae780be7618f94fec1b31d
+      Hash: dfbf9c373a6e1e06a09600aeae891033
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: RobotController
@@ -435,10 +458,22 @@ ScriptsOnlyBuild:
     className: RawImage
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: HealthPack
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: ControlTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GasMask
   - hash:
       serializedVersion: 2
       Hash: 3165968ba45c74472d279ba04455fccb
@@ -453,6 +488,12 @@ ScriptsOnlyBuild:
     className: SignalReceiver
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Keycard
+  - hash:
+      serializedVersion: 2
       Hash: 040dd48e3a027d5424519a5fa2009df4
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -463,6 +504,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: PhysicsRaycaster
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: EscapePod
   - hash:
       serializedVersion: 2
       Hash: 0fb27be807aa299702f28ad0bcad1f46
@@ -523,6 +570,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TextMeshProUGUI
+  - hash:
+      serializedVersion: 2
+      Hash: 87787d9f6495108874dc0a3d7fd92d5c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PickupRotator
   - hash:
       serializedVersion: 2
       Hash: 6980e81ddc615a861309d2d659cc3760
@@ -621,6 +674,12 @@ ScriptsOnlyBuild:
     className: SignalEmitter
   - hash:
       serializedVersion: 2
+      Hash: a63256c41a332fc638c4486c88bb1588
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: OxygenRelease
+  - hash:
+      serializedVersion: 2
       Hash: 8e6ceabfd38a184413d69b7db56c89cc
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools
@@ -643,6 +702,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Button
+  - hash:
+      serializedVersion: 2
+      Hash: 83e769eee07fc231384c812eedbb8224
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: RobotHurtBox
   - hash:
       serializedVersion: 2
       Hash: 7ab0e790220bdca831fdd886b339039d
@@ -671,4 +736,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/MenuScene.unity
   - Assets/Scenes/AlienEscapeGame.unity
-  playerPath: C:/Users/Cassandra/Desktop/AlienEscapeForkedBranch/Alien-Escape/Builds/Alien-Escape.exe
+  playerPath: C:/Users/cmper/OneDrive/Desktop/testBuild/Alien-Escape.exe

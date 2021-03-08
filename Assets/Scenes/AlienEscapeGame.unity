@@ -22691,7 +22691,7 @@ MonoBehaviour:
   GameOverMenu: {fileID: 1123002699}
   WinMenu: {fileID: 1307973580}
   redScreen: {fileID: 1998824494}
-  damageOverlay: {r: 0, g: 0, b: 0, a: 0}
+  damageOverlay: {r: 1, g: 0, b: 0, a: 0}
   isInvulnerable: 0
   invulnerableUntil: 0
   invulnerableDuration: 3
@@ -29880,7 +29880,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5539352851975684225, guid: 8b53f5c4d75a6ed4ca9941df775c2890, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4620365289969669228, guid: 8b53f5c4d75a6ed4ca9941df775c2890, type: 3}
@@ -30827,7 +30827,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2908766100493508838, guid: 8617804c19364244ead606a4ed3fb5c4, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8617804c19364244ead606a4ed3fb5c4, type: 3}

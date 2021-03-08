@@ -57,7 +57,8 @@ public class GameManager : MonoBehaviour
     }
     void Update()
     {
-        damageOverlay.a = playerHealth / 5;
+        damageOverlay.a = (5 - playerHealth) / 5;
+        redScreen.color = damageOverlay;
 
         if (gameActive == true)
         {
