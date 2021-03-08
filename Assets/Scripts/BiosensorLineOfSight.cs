@@ -63,6 +63,13 @@ public class BiosensorLineOfSight : MonoBehaviour
             }   
         }
     }
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject == player)
+        {
+            detectPlayer = false;
+        }
+    }
 
     private void OnDrawGizmos()
     {
