@@ -1,19 +1,19 @@
 m_ProjectFiles:
   m_ManifestFileStatus:
-    m_FilePath: C:/Users/Cassandra/Desktop/AlienEscapeForkedBranch/Alien-Escape/Packages/manifest.json
+    m_FilePath: C:/Users/cmper/OneDrive/Documents/Unity/Alien-Escape/Packages/manifest.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637504980475336460
-    m_Hash: 1067770158
+      ticks: 637505253114206472
+    m_Hash: 170049029
   m_LockFileStatus:
-    m_FilePath: C:/Users/Cassandra/Desktop/AlienEscapeForkedBranch/Alien-Escape/Packages/packages-lock.json
+    m_FilePath: C:/Users/cmper/OneDrive/Documents/Unity/Alien-Escape/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637507679927836420
+      ticks: 637507731301338940
     m_Hash: 2194286289
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
@@ -25,7 +25,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 0.1.0-preview.2
       source: 5
-      resolvedPath: C:\Users\Cassandra\Desktop\AlienEscapeForkedBranch\Alien-Escape\Library\PackageCache\com.unity.ai.navigation.components@0fc6f532e4
+      resolvedPath: C:\Users\cmper\OneDrive\Documents\Unity\Alien-Escape\Library\PackageCache\com.unity.ai.navigation.components@0fc6f532e4
       assetPath: Packages/com.unity.ai.navigation.components
       name: com.unity.ai.navigation.components
       displayName: NavMesh Components
@@ -75,7 +75,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.3.9
       source: 1
-      resolvedPath: C:\Users\Cassandra\Desktop\AlienEscapeForkedBranch\Alien-Escape\Library\PackageCache\com.unity.collab-proxy@1.3.9
+      resolvedPath: C:\Users\cmper\OneDrive\Documents\Unity\Alien-Escape\Library\PackageCache\com.unity.collab-proxy@1.3.9
       assetPath: Packages/com.unity.collab-proxy
       name: com.unity.collab-proxy
       displayName: Unity Collaborate
@@ -170,7 +170,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 2.0.7
       source: 1
-      resolvedPath: C:\Users\Cassandra\Desktop\AlienEscapeForkedBranch\Alien-Escape\Library\PackageCache\com.unity.ide.rider@2.0.7
+      resolvedPath: C:\Users\cmper\OneDrive\Documents\Unity\Alien-Escape\Library\PackageCache\com.unity.ide.rider@2.0.7
       assetPath: Packages/com.unity.ide.rider
       name: com.unity.ide.rider
       displayName: JetBrains Rider Editor
@@ -273,7 +273,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 2.0.5
       source: 1
-      resolvedPath: C:\Users\Cassandra\Desktop\AlienEscapeForkedBranch\Alien-Escape\Library\PackageCache\com.unity.ide.visualstudio@2.0.5
+      resolvedPath: C:\Users\cmper\OneDrive\Documents\Unity\Alien-Escape\Library\PackageCache\com.unity.ide.visualstudio@2.0.5
       assetPath: Packages/com.unity.ide.visualstudio
       name: com.unity.ide.visualstudio
       displayName: Visual Studio Editor
@@ -344,7 +344,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.2.3
       source: 1
-      resolvedPath: C:\Users\Cassandra\Desktop\AlienEscapeForkedBranch\Alien-Escape\Library\PackageCache\com.unity.ide.vscode@1.2.3
+      resolvedPath: C:\Users\cmper\OneDrive\Documents\Unity\Alien-Escape\Library\PackageCache\com.unity.ide.vscode@1.2.3
       assetPath: Packages/com.unity.ide.vscode
       name: com.unity.ide.vscode
       displayName: Visual Studio Code Editor
@@ -413,7 +413,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.1.19
       source: 1
-      resolvedPath: C:\Users\Cassandra\Desktop\AlienEscapeForkedBranch\Alien-Escape\Library\PackageCache\com.unity.test-framework@1.1.19
+      resolvedPath: C:\Users\cmper\OneDrive\Documents\Unity\Alien-Escape\Library\PackageCache\com.unity.test-framework@1.1.19
       assetPath: Packages/com.unity.test-framework
       name: com.unity.test-framework
       displayName: Test Framework
@@ -502,7 +502,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 3.0.1
       source: 1
-      resolvedPath: C:\Users\Cassandra\Desktop\AlienEscapeForkedBranch\Alien-Escape\Library\PackageCache\com.unity.textmeshpro@3.0.1
+      resolvedPath: C:\Users\cmper\OneDrive\Documents\Unity\Alien-Escape\Library\PackageCache\com.unity.textmeshpro@3.0.1
       assetPath: Packages/com.unity.textmeshpro
       name: com.unity.textmeshpro
       displayName: TextMeshPro
@@ -653,7 +653,7 @@ m_PackageAssets:
       isDirectDependency: 1
       version: 1.4.4
       source: 1
-      resolvedPath: C:\Users\Cassandra\Desktop\AlienEscapeForkedBranch\Alien-Escape\Library\PackageCache\com.unity.timeline@1.4.4
+      resolvedPath: C:\Users\cmper\OneDrive\Documents\Unity\Alien-Escape\Library\PackageCache\com.unity.timeline@1.4.4
       assetPath: Packages/com.unity.timeline
       name: com.unity.timeline
       displayName: Timeline
@@ -2629,7 +2629,7 @@ m_PackageAssets:
       isDirectDependency: 0
       version: 1.0.5
       source: 1
-      resolvedPath: C:\Users\Cassandra\Desktop\AlienEscapeForkedBranch\Alien-Escape\Library\PackageCache\com.unity.ext.nunit@1.0.5
+      resolvedPath: C:\Users\cmper\OneDrive\Documents\Unity\Alien-Escape\Library\PackageCache\com.unity.ext.nunit@1.0.5
       assetPath: Packages/com.unity.ext.nunit
       name: com.unity.ext.nunit
       displayName: Custom NUnit
@@ -2687,5 +2687,5 @@ m_PackageAssets:
         path: 
   m_LocalPackages:
     m_LocalFileStatus: []
-m_ProjectPath: C:/Users/Cassandra/Desktop/AlienEscapeForkedBranch/Alien-Escape/Packages
+m_ProjectPath: C:/Users/cmper/OneDrive/Documents/Unity/Alien-Escape/Packages
 m_EditorVersion: 2020.2.1f1 (270dd8c3da1c)

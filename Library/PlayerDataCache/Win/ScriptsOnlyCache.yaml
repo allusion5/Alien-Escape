@@ -77,49 +77,49 @@ ScriptsOnlyBuild:
     - Class: 111
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1486}
+      Script: {instanceID: 1540}
     - Class: 114
-      Script: {instanceID: 1824}
+      Script: {instanceID: 1878}
     - Class: 114
-      Script: {instanceID: 1836}
+      Script: {instanceID: 1890}
     - Class: 114
-      Script: {instanceID: 2110}
+      Script: {instanceID: 2164}
     - Class: 114
-      Script: {instanceID: 2220}
+      Script: {instanceID: 2274}
     - Class: 114
-      Script: {instanceID: 2276}
+      Script: {instanceID: 2330}
     - Class: 114
-      Script: {instanceID: 2332}
+      Script: {instanceID: 2386}
     - Class: 114
-      Script: {instanceID: 2334}
+      Script: {instanceID: 2388}
     - Class: 114
-      Script: {instanceID: 2448}
+      Script: {instanceID: 2502}
     - Class: 114
-      Script: {instanceID: 2536}
+      Script: {instanceID: 2590}
     - Class: 114
-      Script: {instanceID: 2564}
+      Script: {instanceID: 2618}
     - Class: 114
-      Script: {instanceID: 2648}
+      Script: {instanceID: 2702}
     - Class: 114
-      Script: {instanceID: 2656}
+      Script: {instanceID: 2710}
     - Class: 114
-      Script: {instanceID: 2834}
+      Script: {instanceID: 2888}
     - Class: 114
-      Script: {instanceID: 2904}
+      Script: {instanceID: 2958}
     - Class: 114
-      Script: {instanceID: 2930}
+      Script: {instanceID: 2984}
     - Class: 114
-      Script: {instanceID: 3064}
+      Script: {instanceID: 3118}
     - Class: 114
-      Script: {instanceID: 3376}
+      Script: {instanceID: 3430}
     - Class: 114
-      Script: {instanceID: 3434}
-    - Class: 114
-      Script: {instanceID: 3458}
+      Script: {instanceID: 3488}
     - Class: 114
       Script: {instanceID: 3512}
     - Class: 114
-      Script: {instanceID: 3530}
+      Script: {instanceID: 3566}
+    - Class: 114
+      Script: {instanceID: 3584}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -178,21 +178,21 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1486}
+      Script: {instanceID: 1540}
     - Class: 114
-      Script: {instanceID: 1754}
+      Script: {instanceID: 1808}
     - Class: 114
-      Script: {instanceID: 2220}
+      Script: {instanceID: 2274}
     - Class: 114
-      Script: {instanceID: 2656}
+      Script: {instanceID: 2710}
     - Class: 114
-      Script: {instanceID: 2834}
+      Script: {instanceID: 2888}
     - Class: 114
-      Script: {instanceID: 3064}
+      Script: {instanceID: 3118}
     - Class: 114
-      Script: {instanceID: 3376}
+      Script: {instanceID: 3430}
     - Class: 114
-      Script: {instanceID: 3512}
+      Script: {instanceID: 3566}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -320,7 +320,7 @@ ScriptsOnlyBuild:
     className: TMP_FontAsset
   - hash:
       serializedVersion: 2
-      Hash: d071601923e3362b401c88054c58ff94
+      Hash: b3a1317c04881cd7ce91ad70c773f511
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameManager
@@ -736,4 +736,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/MenuScene.unity
   - Assets/Scenes/AlienEscapeGame.unity
-  playerPath: C:/Users/cmper/OneDrive/Desktop/testBuild/Alien-Escape.exe
+  playerPath: C:/Users/cmper/OneDrive/Desktop/AlienEscape/Alien-Escape.exe

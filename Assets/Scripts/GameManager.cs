@@ -9,7 +9,8 @@ public class GameManager : MonoBehaviour
     public float maxHealth;
     [HideInInspector] public float playerHealth;
     public bool gameActive = true;
-    public bool isDetected = false;
+    public bool isDetectedBySensor = false;
+    public bool isDetectedByRobot = false;
     public AudioSource Source1;
     public AudioClip undetectedMusic;
     public AudioClip detectedMusic;
@@ -88,7 +89,7 @@ public class GameManager : MonoBehaviour
                 PauseMenuDown();
             }
         }
-        if (isDetected == true && counter == 1 && gameActive == true)
+        if ((isDetectedBySensor == true || isDetectedByRobot == true) && counter == 1 && gameActive == true)
         {
             if (counter == 1)
             {
@@ -97,11 +98,11 @@ public class GameManager : MonoBehaviour
                 counter += 1;
             }
         }
-        if (isDetected == false && counter == 2 && gameActive == true)
+        if ((isDetectedBySensor == false && isDetectedByRobot == true) && counter == 2 && gameActive == true)
         {
             counter = 0;
         }
-        if (isDetected == false)
+        if (isDetectedBySensor == false && isDetectedByRobot == false)
         {
             if (counter == 0)
             {

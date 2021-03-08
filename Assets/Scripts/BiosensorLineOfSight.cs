@@ -25,7 +25,7 @@ public class BiosensorLineOfSight : MonoBehaviour
     {
         if (detectPlayer == true)
         {
-            GameManager.Instance.isDetected = true;
+            GameManager.Instance.isDetectedBySensor = true;
             animator.enabled = false;
             spotlight.color = (Color.red);
 
@@ -37,7 +37,7 @@ public class BiosensorLineOfSight : MonoBehaviour
         }
         else
             detectPlayer = false;
-            GameManager.Instance.isDetected = false;
+            GameManager.Instance.isDetectedBySensor = false;
             animator.enabled = true;
             spotlight.color = (undetectedColor);
     }
@@ -54,7 +54,7 @@ public class BiosensorLineOfSight : MonoBehaviour
                 if (hit.collider.gameObject == player)
                 {
                     detectPlayer = true;
-                    GameManager.Instance.isDetected = true;
+                    GameManager.Instance.isDetectedBySensor = true;
                     animator.enabled = false;
                     spotlight.color = (Color.red);
                 }

@@ -9,7 +9,7 @@ public class OxygenRelease : MonoBehaviour
 
     private void Update()
     {
-        if (GameManager.Instance.isDetected == true)
+        if (GameManager.Instance.isDetectedBySensor == true)
         {
             oxygen.SetActive(true);
         }

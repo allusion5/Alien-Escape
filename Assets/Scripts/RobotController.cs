@@ -61,7 +61,7 @@ public class RobotController : MonoBehaviour
 
     void WindDown()
     {
-        GameManager.Instance.isDetected = false;
+        GameManager.Instance.isDetectedByRobot = false;
         detectPlayer = false;
         spotlight.color = (undetectedColor);
     }
@@ -82,12 +82,12 @@ public class RobotController : MonoBehaviour
                     if (rayHit.collider.gameObject == player)
                     {
                         //Debug.Log("Direct Line of Sight");
-                        GameManager.Instance.isDetected = true;
+                        GameManager.Instance.isDetectedByRobot = true;
                         detectPlayer = true;
                         GameManager.Instance.RobotDetectSound();
                         Chase();
                     }
-                    //else WindDown();
+                    else WindDown();
                 }
             }
         }

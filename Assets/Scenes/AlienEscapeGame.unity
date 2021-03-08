@@ -6844,7 +6844,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8257097635438757348, guid: 687503515d4640149b5864938cec51ac, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3
+      value: -26
       objectReference: {fileID: 0}
     - target: {fileID: 8257097635438757348, guid: 687503515d4640149b5864938cec51ac, type: 3}
       propertyPath: m_LocalPosition.y
@@ -6852,7 +6852,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8257097635438757348, guid: 687503515d4640149b5864938cec51ac, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -163
+      value: -136
       objectReference: {fileID: 0}
     - target: {fileID: 8257097635438757348, guid: 687503515d4640149b5864938cec51ac, type: 3}
       propertyPath: m_LocalRotation.w
@@ -22679,7 +22679,8 @@ MonoBehaviour:
   maxHealth: 5
   playerHealth: 5
   gameActive: 1
-  isDetected: 0
+  isDetectedBySensor: 0
+  isDetectedByRobot: 0
   Source1: {fileID: 1521064003}
   undetectedMusic: {fileID: 8300000, guid: 947984122966ce440be53b369dbf4ac7, type: 3}
   detectedMusic: {fileID: 8300000, guid: 74af25d73c32d144e9fac0bfeb5496f6, type: 3}
@@ -22728,7 +22729,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -29880,7 +29881,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5539352851975684225, guid: 8b53f5c4d75a6ed4ca9941df775c2890, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4620365289969669228, guid: 8b53f5c4d75a6ed4ca9941df775c2890, type: 3}

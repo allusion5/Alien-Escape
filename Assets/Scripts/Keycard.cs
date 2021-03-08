@@ -9,8 +9,7 @@ public class Keycard : MonoBehaviour
         if(other.gameObject.CompareTag("Player"))
         {
             GameManager.Instance.hasKeyCard = true;
-            //powerup sound?
-            //UI Icon for kard cey
+            GameManager.Instance.ItemPickUpSound();
             Destroy(gameObject);
         }
     }
