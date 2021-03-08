@@ -5,17 +5,15 @@ using UnityEngine.Animations;
 
 public class OxygenRelease : MonoBehaviour
 {
-    //particle effect variable
+    public GameObject oxygen;
 
-    // Start is called before the first frame update
     private void Update()
     {
         if (GameManager.Instance.isDetected == true)
         {
-            //play particle
-            return;
+            oxygen.SetActive(true);
         }
-        else return;
-           //don't play particle
+        else
+            oxygen.SetActive(false);
     }
 }

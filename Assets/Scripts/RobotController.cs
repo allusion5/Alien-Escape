@@ -20,20 +20,21 @@ public class RobotController : MonoBehaviour
         undetectedColor = spotlight.color;
         GoToNextWaypoint();
     }
-    void Update()
-    {
-        if (!robot.pathPending && robot.remainingDistance < 0.1f && detectPlayer == false)
-        {
-           GoToNextWaypoint();
-        }
-    }
 
     private void FixedUpdate()
     {
+        if (!robot.pathPending && robot.remainingDistance < 0.1f && detectPlayer == false)
+        {
+            GoToNextWaypoint();
+        }
+
         if (detectPlayer == true)
         {
             Chase();
         }
+        else
+
+            WindDown();
 
         if (transform.position == player.transform.position)
         {
@@ -43,6 +44,7 @@ public class RobotController : MonoBehaviour
 
     void GoToNextWaypoint()
     {
+        spotlight.color = (undetectedColor);
         if(waypoints.Length == 0)
         { 
             return;
@@ -83,20 +85,14 @@ public class RobotController : MonoBehaviour
                         GameManager.Instance.isDetected = true;
                         detectPlayer = true;
                         GameManager.Instance.RobotDetectSound();
+                        Chase();
                     }
-                    else WindDown();
+                    //else WindDown();
                 }
             }
         }
     }
 
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.gameObject == player)
-        {
-            WindDown();
-        }
-    }
     private void OnDrawGizmos()
     {
         Debug.DrawRay(lineOfSight.position, relPlayerPos);

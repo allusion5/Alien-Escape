@@ -23,6 +23,8 @@ public class GameManager : MonoBehaviour
     public Canvas PauseMenu;
     public Canvas GameOverMenu;
     public Canvas WinMenu;
+    public Image redScreen;
+    public Color damageOverlay;
     public bool isInvulnerable = false;
     public float invulnerableUntil;
     public float invulnerableDuration = 5f;
@@ -30,15 +32,6 @@ public class GameManager : MonoBehaviour
 
     void Awake()
     {
-        playerHealth = maxHealth;
-        PauseMenu.enabled = false; // Pause menu canvas is off waiting for the player to press P to turn it on.
-        GameOverMenu.enabled = false; // GameOverMenu is off waiting for players health to hit 0.
-        WinMenu.enabled = false; // WinMenu is waiting to be triggered
-        Time.timeScale = 1; // This is so that when you return from the main menu the game runs as if its a new game.
-        counter = 0; // This is so that the background music can reset upon reloading from the main menu.
-        losecounter = 0;
-        wincounter = 0;
-
         if (Instance == null) //Things werent working correctly on reset going from pause menu to main menu and then starting new game, so i did comment this section out. If you know how to make it work properly awesome. - Jordan
         {
             Instance = this;
@@ -50,9 +43,30 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    private void Start()
+    {
+        playerHealth = maxHealth;
+        PauseMenu.enabled = false; // Pause menu canvas is off waiting for the player to press P to turn it on.
+        GameOverMenu.enabled = false; // GameOverMenu is off waiting for players health to hit 0.
+        WinMenu.enabled = false; // WinMenu is waiting to be triggered
+        Time.timeScale = 1; // This is so that when you return from the main menu the game runs as if its a new game.
+        counter = 0; // This is so that the background music can reset upon reloading from the main menu.
+        losecounter = 0;
+        wincounter = 0;
+        redScreen.color = damageOverlay;
+    }
     void Update()
     {
-        if(Time.time >= invulnerableUntil)
+        damageOverlay.a = playerHealth / 5;
+
+        if (gameActive == true)
+        {
+            redScreen.enabled = true;
+        }
+        else
+            redScreen.enabled = false;
+
+        if (Time.time >= invulnerableUntil)
         {
             isInvulnerable = false;
         }
@@ -152,11 +166,11 @@ public class GameManager : MonoBehaviour
     }
     public void RobotDetectSound()
     {
-        if (gameActive == true)
         {
-            Source1.PlayOneShot(detectedbyRobot, 0.8f);
+            if (gameActive == true)
+                Source1.PlayOneShot(detectedbyRobot, 0.8f);
+            else return;
         }
-        else return;
     }
     public void ItemPickUpSound()
     {

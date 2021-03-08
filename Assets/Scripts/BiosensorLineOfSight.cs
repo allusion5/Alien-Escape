@@ -21,16 +21,25 @@ public class BiosensorLineOfSight : MonoBehaviour
 
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
-        if (detectPlayer == true && GameManager.Instance.isInvulnerable == false)
+        if (detectPlayer == true)
         {
+            GameManager.Instance.isDetected = true;
+            animator.enabled = false;
             spotlight.color = (Color.red);
-            GameManager.Instance.playerHealth-= 1 * Time.deltaTime;
+
+
+            if (GameManager.Instance.isInvulnerable == false)
+            {
+                GameManager.Instance.playerHealth -= 1 * Time.deltaTime;
+            }
         }
         else
+            detectPlayer = false;
+            GameManager.Instance.isDetected = false;
             animator.enabled = true;
-        spotlight.color = (undetectedColor);
+            spotlight.color = (undetectedColor);
     }
     void OnTriggerStay(Collider other)
     {
@@ -49,8 +58,9 @@ public class BiosensorLineOfSight : MonoBehaviour
                     animator.enabled = false;
                     spotlight.color = (Color.red);
                 }
-            }
-            
+                else
+                    detectPlayer = false;
+            }   
         }
     }
 
